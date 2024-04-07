@@ -7,3 +7,7 @@ Integrantes:
 - Joelma Gomes
 - Rayanne Karyne
 - Victoria Antonella
+
+
+Modelo ERR e Relacional :
+
