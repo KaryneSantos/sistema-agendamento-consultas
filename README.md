@@ -4,7 +4,7 @@ Projeto das disciplinas de PWEB(Programação Web), POO(Programação Orietada a
 
 *Dependências utilizadas*: EXPRESS, EJS, BODY-PARSER, EXPRESS-SESSION, MYSQL2, BOOTSTRAP
 
-Integrantes:
+*Integrantes:*
 - Alan Victor
 - Joelma Gomes
 - Rayanne Karyne
