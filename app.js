@@ -24,8 +24,6 @@ app.use('/contato', contateRouters);
 const renovarReceitaRouters = require('./routers/receita');
 app.use('/renovacao-de-receita', renovarReceitaRouters);
 
-const pagueReceitaRouters = require('./routers/paga');
-app.use('/pages', pagueReceitaRouters);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

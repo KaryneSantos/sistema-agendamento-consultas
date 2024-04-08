@@ -119,3 +119,9 @@ body{
   background-repeat: no-repeat;
   background-color: rgb(247, 247, 249)
 }
+
+.icon-pergunta {
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: -3px;
+}

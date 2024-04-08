@@ -28,9 +28,6 @@
                         <a class="nav-link nav-text" href="/contato">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-text" href="/paga">pagina</a>
-                    </li>
-                    <li class="nav-item">
                         <span class="d-inline-flex align-items-center mr-1">
                             <span class="material-symbols-outlined mr-1">person</span>
                             <a class="nav-link nav-text" href="/login">Entrar</a>
@@ -130,76 +127,55 @@
         </div>
         <hr>
         <div class="perg-freq">
-          <h2 style="font-size: 35px;">Perguntas frequentes</h2>
-          <div class="pergunta d-flex align-items-center">
-              <p class="mr-3" style="font-size: 20px;">O valor da consulta varia com a modalidade:</p>
-              <button class="btn btn-pergunta" onclick="toggleAnswer(1)" style="background-color: transparent; border: none; font-size: 24px;">
-                  <span class="material-symbols-outlined">
-                      add_circle
-                  </span>
-              </button>
-          </div>
+          <h2 class="mb-5" style="font-size: 45px;">Perguntas frequentes</h2>
+          <div class="pergunta d-flex align-items-center mb-4">
+            <div class="mr-3" style="font-size: 25px;">O valor da consulta varia com a modalidade:</div>
+            <span onclick="toggleAnswer(1)" class="material-symbols-outlined simbolos-add icon-pergunta">add_circle</span>
+        </div>        
           <div class="resposta" id="resposta1" style="display: none;">
               <ol>
                   <li style="font-size: 18px;">O preço da consulta agendada é determinado por cada profissional, <a href="https://plataforma.medico24hs.com.br/agendamento">clique aqui e veja os valores</a>.</li>
                   <li style="font-size: 18px;">A consulta por plantão possui preço fixo mais acessível, <a href="https://plataforma.medico24hs.com.br/plantao">confira aqui os valores</a>.</li>
               </ol>
           </div>
-          <div class="pergunta d-flex align-items-center">
-            <p class="mr-3" style="font-size: 20px;">O valor da consulta varia com a modalidade:</p>
-            <button class="btn btn-pergunta" onclick="toggleAnswer(1)" style="background-color: transparent; border: none; font-size: 24px;">
-                <span class="material-symbols-outlined">
-                    add_circle
-                </span>
-            </button>
+          <hr>
+          <div class="pergunta d-flex align-items-center mb-4">
+            <div class="mr-3" style="font-size: 25px;">Preciso de e-mail para acessar a plataforma?</div>
+            <span onclick="toggleAnswer(2)" class="material-symbols-outlined simbolos-add icon-pergunta">add_circle</span>
         </div>
-        <div class="resposta" id="resposta1" style="display: none;">
-            <ol>
-                <li style="font-size: 18px;">O preço da consulta agendada é determinado por cada profissional, <a href="https://plataforma.medico24hs.com.br/agendamento">clique aqui e veja os valores</a>.</li>
-                <li style="font-size: 18px;">A consulta por plantão possui preço fixo mais acessível, <a href="https://plataforma.medico24hs.com.br/plantao">confira aqui os valores</a>.</li>
-            </ol>
+        
+        <div class="resposta" id="resposta2" style="display: none;">
+                <p style="font-size: 18px;">Sim, é necessário ter uma conta de e-mail para criar seu usuário e realizar o login na plataforma.
+                    <br>Caso não tenha um e-mail, crie uma conta <a href="https://mail.google.com/mail/u/0/#inbox">neste link pelo Gmail.</a>.</p>
         </div>
-        <div class="pergunta d-flex align-items-center">
-          <p class="mr-3" style="font-size: 20px;">O valor da consulta varia com a modalidade:</p>
-          <button class="btn btn-pergunta" onclick="toggleAnswer(1)" style="background-color: transparent; border: none; font-size: 24px;">
-              <span class="material-symbols-outlined">
-                  add_circle
-              </span>
-          </button>
-      </div>
-      <div class="resposta" id="resposta1" style="display: none;">
+        <hr>
+        <div class="pergunta d-flex align-items-center mb-4">
+            <div class="mr-3" style="font-size: 25px;">Como funciona a receita digital?</div>
+            <span onclick="toggleAnswer(3)" class="material-symbols-outlined simbolos-add icon-pergunta">add_circle</span>
+        </div>
+      <div class="resposta" id="resposta3" style="display: none;">
           <ol>
-              <li style="font-size: 18px;">O preço da consulta agendada é determinado por cada profissional, <a href="https://plataforma.medico24hs.com.br/agendamento">clique aqui e veja os valores</a>.</li>
-              <li style="font-size: 18px;">A consulta por plantão possui preço fixo mais acessível, <a href="https://plataforma.medico24hs.com.br/plantao">confira aqui os valores</a>.</li>
-          </ol>
+              <li style="font-size: 18px;">O médico emite a receita eletrônica virtual diretamente em nossa plataforma, através de assinatura digital.</li>
+              <li style="font-size: 18px;">O paciente recebe um SMS com um link para a receita, que tem validade nacional. A receita também pode ser utilizada via QR Code ou baixada em PDF para apresentar na farmácia.</li>
+              <li style="font-size: 18px;" class="mb-3">Assim, é possível realizar a compra do remédio presencialmente ou a distância, oferecendo conforto e segurança ao paciente.</li>
+            <p style="color: #495257;">Todas as prescrições possuem um código único identificador, em que constam os dados do médico e da receita. Portanto, para aqueles <br> medicamentos de uso onde há retenção do receituário, o documento somente poderá ser utilizado uma única vez.</p>
+            </ol>
       </div>
-      <div class="pergunta d-flex align-items-center">
-        <p class="mr-3" style="font-size: 20px;">O valor da consulta varia com a modalidade:</p>
-        <button class="btn btn-pergunta" onclick="toggleAnswer(1)" style="background-color: transparent; border: none; font-size: 24px;">
-            <span class="material-symbols-outlined">
-                add_circle
-            </span>
-        </button>
+      <hr>
+      <div class="pergunta d-flex align-items-center mb-4">
+        <div class="mr-3" style="font-size: 25px;">É possível que o médico solicite exames pela plataforma?</div>
+        <span onclick="toggleAnswer(4)" class="material-symbols-outlined simbolos-add icon-pergunta">add_circle</span>
     </div>
-    <div class="resposta" id="resposta1" style="display: none;">
-        <ol>
-            <li style="font-size: 18px;">O preço da consulta agendada é determinado por cada profissional, <a href="https://plataforma.medico24hs.com.br/agendamento">clique aqui e veja os valores</a>.</li>
-            <li style="font-size: 18px;">A consulta por plantão possui preço fixo mais acessível, <a href="https://plataforma.medico24hs.com.br/plantao">confira aqui os valores</a>.</li>
-        </ol>
+    <div class="resposta" id="resposta4" style="display: none;">
+        <p style="color: #495257;">Sim. Essa é mais uma novidade. Agora, nossos médicos podem fazer o pedido de dezenas de tipos de exame diretamente em nossa plataforma, ao <br> final da consulta, entregando mais esse benefício ao paciente.</p>
     </div>
-    <div class="pergunta d-flex align-items-center">
-      <p class="mr-3" style="font-size: 20px;">O valor da consulta varia com a modalidade:</p>
-      <button class="btn btn-pergunta" onclick="toggleAnswer(1)" style="background-color: transparent; border: none; font-size: 24px;">
-          <span class="material-symbols-outlined">
-              add_circle
-          </span>
-      </button>
-  </div>
-  <div class="resposta" id="resposta1" style="display: none;">
-      <ol>
-          <li style="font-size: 18px;">O preço da consulta agendada é determinado por cada profissional, <a href="https://plataforma.medico24hs.com.br/agendamento">clique aqui e veja os valores</a>.</li>
-          <li style="font-size: 18px;">A consulta por plantão possui preço fixo mais acessível, <a href="https://plataforma.medico24hs.com.br/plantao">confira aqui os valores</a>.</li>
-      </ol>
+    <hr>
+    <div class="pergunta d-flex align-items-center mb-4">
+        <div class="mr-3" style="font-size: 25px;">Quais são os métodos de pagamento aceitos?</div>
+        <span onclick="toggleAnswer(5)" class="material-symbols-outlined simbolos-add icon-pergunta">add_circle</span>
+    </div>
+  <div class="resposta" id="resposta5" style="display: none;">
+    <p style="color: #495257;">Aceitamos pagamentos por cartão de crédito e PIX, através das empresas Pagar.me e Paypal.</p>
   </div>
       </div>
       
