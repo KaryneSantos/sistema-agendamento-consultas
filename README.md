@@ -20,3 +20,4 @@ Projeto das disciplinas de PWEB(Programação Web), POO(Programação Orietada a
 
 *Modelo ERR e Relacional:*
 
+[https://docs.google.com/document/d/1p7Tpr5r6iZ1wXrXBJqCD4jYzLMTyfkZisPLGz3raBug/edit](https://docs.google.com/document/d/1p7Tpr5r6iZ1wXrXBJqCD4jYzLMTyfkZisPLGz3raBug/edit?usp=sharing)
