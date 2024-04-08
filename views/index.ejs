@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-  <div class="mx-auto">
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="/"><img src="./img/logo-clinica.png" alt="logo-clinica" style="height: 120px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -26,18 +25,18 @@
                     <a class="nav-link nav-text" href="#">Renovação de Receita</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-text" href="#">Contato</a>
+                    <a class="nav-link nav-text" href="/contato">Contato</a>
                 </li>
                 <li class="nav-item">
                     <span class="d-inline-flex align-items-center mr-1">
                         <span class="material-symbols-outlined mr-1">person</span>
-                        <a class="nav-link nav-text" href="#">Entrar</a>
+                        <a class="nav-link nav-text" href="/login">Entrar</a>
                     </span>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><button class="btn btn-primary nav-text button-cadastrar">Cadastrar</button></a>
+                    <a class="nav-link" href="/registrar"><button class="btn btn-primary nav-text button-cadastrar">Cadastrar</button></a>
                 </li>
             </ul>
         </div>
@@ -46,7 +45,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 logo-img" src="./img/hero-bg.jpg" alt="Primeiro Slide">
+                <img class="d-block w-100" src="./img/hero-bg.jpg" alt="Primeiro Slide">
                 <div class="carousel-caption">
                     <h3>Cuide da sua saúde com médicos online</h3>
                     <p>Evite filas, salas de espera e custos com deslocamento. Tenha acesso a saúde de qualidade por um preço justo.</p>
@@ -54,7 +53,6 @@
             </div>
         </div>
     </div>
-
     <div class="espec">
         <div class="row p-5">
             <div class="col-md-6">
@@ -62,35 +60,35 @@
                 <p>Selecione a especialidade, o profissional e a data/horário mais conveniente para realizar sua teleconsulta</p>
             </div>
             <div class="col-md-6 text-right">
-                <button class="btn btn-primary">Todas especialidades</button>
+                <a href="/especialidades"><button class="btn btn-primary button-especialidade" id="button-especialidade">Todas especialidades</button></a>
             </div>
         </div>
         <div class="row mt-2">
-            <div class="card mb-5">
+            <div class="card mb-4">
                 <img class="card-img-top" src="https://medico24hs.com.br/wp-content/uploads/2022/05/Clinica-Medica.svg" style="height: 50px;" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Clínica Médica</h5>
                 </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-4">
                 <img class="card-img-top" src="https://medico24hs.com.br/wp-content/uploads/2022/05/Psiquiatria.svg" style="height: 50px;" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Psiquiatria</h5>
                 </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-4">
                 <img class="card-img-top" src="https://medico24hs.com.br/wp-content/uploads/2022/05/Ginecologia.svg"  style="height: 50px;" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Ginecologia</h5>
                 </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-4">
                 <img class="card-img-top" src="https://medico24hs.com.br/wp-content/uploads/2022/05/Urologia.svg" style="height: 50px;" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Urologia</h5>
                 </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-4">
                 <img class="card-img-top" src="https://medico24hs.com.br/wp-content/uploads/2022/05/Pediatria.svg" style="height: 50px;" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Pediatria</h5>
@@ -98,8 +96,41 @@
             </div>
         </div>
     </div>
-</div>
 
+    <hr>
+    
+    <div class="consult d-flex align-items-center">
+        <img src="https://medico24hs.com.br/wp-content/uploads/2020/04/Medico24hs_Home_ComoFunciona_Responsivo-768x504.jpg" alt="img-exempl">
+        <div class="consult-text flex-column justify-content-end ml-4">
+            <h2>Como funciona a consulta online?</h2>
+            <p style="color: #495257;">Realizar sua teleconsulta está mais rápido e fácil. Receber apoio profissional para sua saúde está mais acessível do que nunca!</p>
+            <ol>
+                <li>Escolha sua modalidade de atendimento, sendo o plantão ou o agendamento com um médico da especialidade de sua escolha;</li>
+                <li>Caso opte pelo agendamento, escolha o horário que gostaria de ser atendido;</li>
+                <li>Agora, é a vez de escolher como deseja realizar o pagamento, oferecemos PIX e cartão de crédito;</li>
+                <li>No momento do atendimento, certifique-se de que está em um local com bom sinal de wi-fi, microfone e câmera funcionando, e inicie a sua sessão.</li>
+            </ol>
+            <button class="btn btn-primary" style="background-color: #0da2c5; width: 250px; height: 45px; border-radius: 25px;">Quero ser atendido!</button>
+        </div>
+    </div>
+
+    <div class="acess-plat text-center mt-5">
+        <div class="row">
+            <div class="col-md-6 text-left">
+                <h2 style="font-size: 35px;">Descomplique o acesso à sua consulta médica com a teleconsulta</h2>
+                <p style="font-size: 18px; color: #495257;">Torne-se paciente do CentralMED e conecte-se aos benefícios que essa relação oferece. Realize o cadastro e comece já a investir no seu maior bem: você!</p>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center mt-md-4">
+                <button class="btn btn-primary mr-3" style="background-color: #0da2c5; width: 250px; height: 45px; border-radius: 25px;">Acesse plantão 24h</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    </div>
+<script src="./js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
