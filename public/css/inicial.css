@@ -1,10 +1,10 @@
 /*css variables*/
 :root {
     --body-bg-color: #ffffff;
-    --green: #d7d6d6;
-    --light-green: #8ed7c6;
-    --light-grey: #dce4e3;
-    --text-color: #084236;
+    --green: white;
+    --light-green: black;
+    --light-grey: #0da2c5;
+    --text-color: #0da2c5;
 }
 
 /*reset*/
@@ -147,7 +147,8 @@ body {
 
 .navbar .menu-list .menu-item  .menu-link .menu-link-text{   
     display: none;
-    color: inherit; 
+    color: inherit;
+     
 }
 
 .navbar .menu-list .menu-item  .menu-link:hover,
@@ -300,7 +301,7 @@ body {
 .nav2 {
     display: flex;
     background-color: #f8f9fa; /* Cor de fundo */
-    border-bottom: 2px solid #8ed7c6; /* Linha inferior */
+    border-bottom: 2px solid #0da2c5; /* Linha inferior */
     padding: 10px; /* Espaçamento interno */
 }
 .nav2 li {
@@ -309,7 +310,7 @@ body {
 }
 .nav2 li a {
     text-decoration: none; /* Remova o sublinhado padrão dos links */
-    color: #333; /* Cor do texto */
+    color: #0da2c5; /* Cor do texto */
     font-weight: bold; /* Negrito */
     padding: 8px 15px; /* Espaçamento interno */
     border-radius: 5px; /* Borda arredondada */
@@ -324,5 +325,69 @@ body {
         font-size: 24px;
 }
 .nav2 .fa:hover {
-    color: #0da2c5; /* Alterar a cor ao passar o mouse */
+background-color: #0da2c5;
+    color: #fff; /* Alterar a cor ao passar o mouse */
 }
+
+.container {
+    width: 1200px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container .card {
+    position: relative;
+  }
+  
+  .container .card .face {
+    width: 375px;
+    height: 200px;
+    transition: .5s;
+  }
+  
+  .container .card .face.face1 {
+    position: relative;
+    background: #555;
+    color: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    transform: translateY(100px);
+  }
+  
+  .container .card:hover .face.face1 {
+    background-color: #F7F61C;
+    color: #000;
+    transform: translateY(0);
+  }
+  
+  .container .card .face.face2 {
+    position: relative;
+    background: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    transform: translateY(-100px);
+  }
+  
+  .container .card:hover .face.face2 {
+    transform: translateY(0);
+  }
+  
+  .container .card .face.face1 {
+    font-size: 2.25em;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .container .card .face.face2 p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.25em;  
+  }

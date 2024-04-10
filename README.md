@@ -1,6 +1,6 @@
 Sistema de Gereciamento de Consultas 🩺🧑‍⚕️
 
-Projeto das disciplinas de PWEB(Programação Web), POO(Programação Orietada a Objetos) e Fundamentos de Banco de dados.
+Projeto das disciplinas de PWEB(Programação Web), POO(Programação Orietada a Objetos) e BCDD(Banco de Dados).
 
 *Dependências utilizadas:*
 • Express

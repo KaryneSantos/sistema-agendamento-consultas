@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sidebar</title>
+        <title>Inicial</title>
 
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
     
     <!--fontawesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" >
-        <link rel="stylesheet" href="/css/teste.css">
+        <link rel="stylesheet" href="/css/inicial.css">
   </head>
     <body>
         
@@ -39,19 +40,19 @@
                 <!--item list-->
                 <ul class="menu-list">   
                     <li class="menu-item">                        
-                        <a class="menu-link" href="#"> 
+                        <a class="menu-link" href="/agendar.ejs">
                             <i class="fas fa-solid fa-table"></i>
                             <span class="menu-link-text">Agendar</span>                            
                         </a>
                     </li>
                     <li class="menu-item">                        
-                        <a class="menu-link" href="#">
+                        <a class="menu-link" href="/listaConsultas.ejs">
                             <i class="fas fa-solid fa-search"></i>
-                            <span class="menu-link-text">Consultar</span>    
+                            <span class="menu-link-text">Lista de Consultas</span>    
                         </a>
                     </li>
                     <li class="menu-item">                        
-                        <a class="menu-link" href="#">
+                        <a class="menu-link" href="/planos.ejs">
                             <i class="fas fa-solid fa-credit-card"></i>
                             <span class="menu-link-text">Planos</span>    
                         </a>
@@ -80,13 +81,37 @@
             <div class="nav2">
                 
                     <li><a href="#">Agendar</a></li>
-                    <li><a href="#">Consultar</a></li>
+                    <li><a href="#">Lista de Consultas</a></li>
                     <li><a href="#">Planos</a></li>
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                
-            </div>
-            
-            
+                    <li class="fa fa-sign-out" aria-hidden="true"></li>
+                </div>
+
+                <div class="container">
+                  <div class="card">
+                    <div class="face face1">
+                      <h3>Consultas</h3>
+                    </div>
+                    <div class="face face2">
+                      <p>Succulents tbh selvage af, etsy DIY waistcoat you probably haven't heard of them stumptown cloud bread. Hot chicken man braid normcore, selfies flannel gluten-free lyft fashion axe kickstarter 3 wolf moon.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="face face1">
+                      <h3>Medicos</h3>
+                    </div>
+                    <div class="face face2">
+                      <p>Succulents tbh selvage af, etsy DIY waistcoat you probably haven't heard of them stumptown cloud bread. Hot chicken man braid normcore, selfies flannel gluten-free lyft fashion axe kickstarter 3 wolf moon.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="face face1">
+                      <h3>Joelma</h3>
+                    </div>
+                    <div class="face face2">
+                      <p>Succulents tbh selvage af, etsy DIY waistcoat you probably haven't heard of them stumptown cloud bread. Hot chicken man braid normcore, selfies flannel gluten-free lyft fashion axe kickstarter 3 wolf moon.</p>
+                  </div>
+                </div>
+              
         </main>
         <script>
             //elements 
@@ -111,7 +136,14 @@ iconSearch.addEventListener('click', () => {
         navbar.classList.add('active'); 
     }
 });
-
+document.addEventListener("DOMContentLoaded", function() {
+    var consultasLink = document.getElementById("consultas-link");
+    consultasLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Evita o comportamento padrão do link (navegar para uma nova página)
+        window.location.href = "lista-consulta.ejs"; // Redireciona o usuário para a página de consultas
+    });
+});
         </script>
     </body>
 </html>
+

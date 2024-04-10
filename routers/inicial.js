@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-    res.render('teste');
+    res.render('inicial');
     console.log('Entrando no site');
 });
 

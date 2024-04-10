@@ -1,3 +1,5 @@
+
+// Validação das senhas 
 document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('signUp').addEventListener('submit', async function(event) {
@@ -12,5 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
         this.submit();
     });
-    
+});
+
+
+// Validação de termo e condições
+document.addEventListener("DOMContentLoaded", function() {
+    const checkbox = document.getElementById("termos_condicoes");
+    const btnCadastrar = document.querySelector("button[type='button']");
+
+    checkbox.addEventListener("change", function() {
+      btnCadastrar.disabled = !this.checked;
     });
+  }); 
