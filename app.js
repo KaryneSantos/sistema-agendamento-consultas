@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const ejs = require('ejs');
 
 const bodyParser = require('body-parser');
 
@@ -24,6 +25,8 @@ app.use('/contato', contateRouters);
 const renovarReceitaRouters = require('./routers/receita');
 app.use('/renovacao-de-receita', renovarReceitaRouters);
 
+const testeRouter = require('./routers/teste');
+app.use('/teste', testeRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

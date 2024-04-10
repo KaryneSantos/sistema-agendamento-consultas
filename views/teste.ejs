@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sidebar</title>
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+        <!--css
+        <link rel="stylesheet" href="./assets/styles/style.css">-->
+
+        <!--js
+        <script src="./assets/scripts/index.js" defer></script>-->
+    
+    <!--fontawesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" >
+        <link rel="stylesheet" href="/css/teste.css">
+  </head>
+    <body>
+        
+        <!--aside bar-->
+        <nav class="navbar">            
+            <div class="navbar-container">
+                <!--logo div-->
+                <div class="navbar-logo-div">
+                    <a class="navbar-logo-link" href="#">
+                       <img src="/img/logo-clinica.png" alt="" style="width: 100px; height: auto;">
+                    </a>
+                    <button class="navbar-toggler"><i class="fas fa-solid fa-bars"></i></button>
+                </div>
+
+                <!--search input-->
+                
+
+                <!--item list-->
+                <ul class="menu-list">   
+                    <li class="menu-item">                        
+                        <a class="menu-link" href="#"> 
+                            <i class="fas fa-solid fa-table"></i>
+                            <span class="menu-link-text">Agendar</span>                            
+                        </a>
+                    </li>
+                    <li class="menu-item">                        
+                        <a class="menu-link" href="#">
+                            <i class="fas fa-solid fa-search"></i>
+                            <span class="menu-link-text">Consultar</span>    
+                        </a>
+                    </li>
+                    <li class="menu-item">                        
+                        <a class="menu-link" href="#">
+                            <i class="fas fa-solid fa-credit-card"></i>
+                            <span class="menu-link-text">Planos</span>    
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--div user info-->
+            <div class="user-container">
+                <div class="user-info">
+                    <i class="fas fa-solid fa-user-secret"></i>
+                    <div class="user-details">
+                        <h3 class="user-name">Eleanor Pena</h3>
+                        <p class="user-occupation">Veterinary</p>
+                    </div>
+                </div>
+                <a class="logout-btn" href="#">
+                    <i class="fas fa-sharp fa-regular fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </nav>
+
+        
+        <!--dashboard-->
+        <main class="dashboard">
+            <div class="nav2">
+                
+                    <li><a href="#">Agendar</a></li>
+                    <li><a href="#">Consultar</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                
+            </div>
+            
+            
+        </main>
+        <script>
+            //elements 
+const btnToggler = window.document.querySelector(".navbar-toggler"); 
+const inputSearch = window.document.querySelector(".navbar-search"); 
+const iconSearch = window.document.querySelector("#icon-search");
+const navbar = window.document.querySelector(".navbar");
+
+//events
+btnToggler.addEventListener('click', () => {
+    navbar.classList.toggle('active'); 
+});
+
+inputSearch.addEventListener('click', () => {
+    if(!navbar.classList.contains("active")) {
+        navbar.classList.add('active'); 
+    }
+});
+
+iconSearch.addEventListener('click', () => {
+    if(!navbar.classList.contains("active")) {
+        navbar.classList.add('active'); 
+    }
+});
+
+        </script>
+    </body>
+</html>
