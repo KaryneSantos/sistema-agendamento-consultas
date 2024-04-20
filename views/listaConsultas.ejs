@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Pacientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Pacientes</h1>
+    <table id="patient-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João Silva</td>
+          <td>
+            <button class="delete-btn">Apagar</button>
+            <button class="edit-btn">Editar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Maria Santos</td>
+          <td>
+            <button class="delete-btn">Apagar</button>
+            <button class="edit-btn">Editar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carlos Oliveira</td>
+          <td>
+            <button class="delete-btn">Apagar</button>
+            <button class="edit-btn">Editar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const deleteButtons = document.querySelectorAll('.delete-btn');
+
+  deleteButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const row = this.closest('tr');
+      row.remove();
+    });
+  });
+
+  const editButtons = document.querySelectorAll('.edit-btn');
+
+  editButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Adicione aqui a lógica para editar o paciente
+      console.log('Editar paciente');
+    });
+  });
+});
+
+  </script>
+</body>
+</html>

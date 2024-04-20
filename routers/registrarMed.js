@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('agendar');
+    res.render('registroMedico');
 });
+
 
 module.exports = router;

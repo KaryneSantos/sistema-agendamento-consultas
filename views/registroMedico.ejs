@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CentralMED | Crie sua conta</title>
+    <title>CentralMED | Crie sua conta - Médico</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="./img/logo-clinica.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/registroMed.css">
 </head>
 <body>
     <section class="vh-100" style="background-color: #eee;">
@@ -18,7 +19,7 @@
                   <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
       
-                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Inscreva-se</p>
+                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Cadastro de Médico</p>
 
                       <form action="/cadastrar" method="POST" class="mx-1 mx-md-4">
       
@@ -26,17 +27,18 @@
                           <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0">
                             <label class="form-label" for="form3Example1c">Nome Completo</label>
-                            <input type="text" name="nome" id="nomecompleto" class="form-control" placeholder="exemplo: Joelma Gomes da Silva" />
+                            <input type="text" name="nome" id="nomecompleto" class="form-control" placeholder="exemplo: Manoel da Silva Medeiros" />
                           </div>
                         </div>
-      
+
+                        
                         <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                            <div class="form-outline flex-fill mb-0">
-                              <label class="form-label" for="form3Example3c">CPF</label>
-                              <input type="text" name="cpf" id="cpf" class="form-control" placeholder="000.000.000-00" />
-                            </div>
+                          <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <label class="form-label" for="form3Example1c">Telefone</label>
+                            <input type="text" name="telefone" id="telefone" class="form-control" placeholder="(DDD) 99999-9999" />
                           </div>
+                        </div>
 
                           <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
@@ -54,6 +56,28 @@
                               <option value="feminino">Feminino</option>
                             </select>
                           </div>
+
+
+                          <div class="form-group">
+                            <label for="pet-select">Sexo</label>
+                            <select class="form-control" id="esp-select" name="especialidade">
+                              <option value="">Por favor escolha uma especialidade</option>
+                              <option value="1">Cardiologista</option>
+                              <option value="2">Clínico Geral</option>
+                              <option value="3">Endocrinologista</option>
+                              <option value="4">Geriatra</option>
+                              <option value="5">Ginecologista</option>
+                              <option value="6">Infectologista</option>
+                              <option value="7">Neurologista</option>
+                              <option value="8">Ortopedista</option>
+                              <option value="9">Otorrinolaringologista</option>
+                              <option value="10">Pediatra</option>
+                              <option value="11">Psiquiatra</option>
+                              <option value="12">Radiologista</option>
+                              <option value="13">Urologista</option>
+                            </select>
+                          </div>
+                        
                         
 
                           <div class="d-flex flex-row align-items-center mb-4">
@@ -88,8 +112,6 @@
                               Concordo com os <a href="#">termos e condições</a>
                           </label>
                       </div>
-
-                      <a href="/pergRegistro">oioiooi</a>
       
 
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">

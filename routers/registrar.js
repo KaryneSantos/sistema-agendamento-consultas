@@ -13,7 +13,7 @@ const sexosValidos = [
 
 router.post('/', (req, res) => {
     console.log('Coletando dados...');
-    const { nome, cpf, data_nascimento, sexo, email, senha, confirmacao_senha } = req.body;
+    const { nome, cpf, data_nascimento, sexo, email, senha, confirmacao_senha, termos_condicoes } = req.body;
 
     console.log('Nome: ', nome);
     console.log('CPF: ', cpf);
@@ -27,9 +27,13 @@ router.post('/', (req, res) => {
 
     let errors = [];
 
+    if (!termos_condicoes) {
+        errors.push({ msg: 'Você deve concordar com os termos e condições.' });
+    }
+
     if (!nome || !cpf || !data_nascimento || !sexo || !email || !senha || !confirmacao_senha) {
         errors.push({ msg: 'Por favor, preencha todos os campos obrigatórios.' });
-    } else if (nome && nome.length < 3) {
+    } else if (nome && nome.length < 3 || nome.length > 50) {
         errors.push({ msg: 'Seu nome deve conter no mínimo 3 caracteres' });
     } else if (!validarCPF(cpf)) {
         errors.push({ msg: 'CPF inválido' });
@@ -41,7 +45,9 @@ router.post('/', (req, res) => {
         errors.push({ msg: 'Email inválido' });
     } else if (senha !== confirmacao_senha) {
         errors.push({ msg: 'As senhas não correspondem' });
-    } else if (errors.length > 0) {
+    } 
+
+    if (errors.length > 0) {
         return res.status(400).json({ errors });
     }
 

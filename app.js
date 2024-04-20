@@ -22,6 +22,12 @@ app.use('/', indexRouters);
 const registrarRouters = require('./routers/registrar');
 app.use('/registrar', registrarRouters);
 
+const registrarMedRouters = require('./routers/registrarMed');
+app.use('/registrarMed', registrarMedRouters);
+
+const pergRegistroRouters = require('./routers/pergRegistro');
+app.use('/pergRegistro', pergRegistroRouters);
+
 const loginRouters = require('./routers/login');
 app.use('/login', loginRouters);
 
@@ -34,11 +40,11 @@ app.use('/contato', contateRouters);
 const inicialRouter = require('./routers/inicial');
 app.use('/inicial', inicialRouter);
 
- const inicialRouter = require('./routers/agendar');
- app.use('/inicial', inicialRouter);
+const listaConsultasRouters = require('./routers/listaConsultas');
+app.use('/listaConsultas', listaConsultasRouters);
 
-const inicialRouter = require('./routers/planos');
- app.use('/planos', inicialRouter);
+const agendarRouter = require('/routers/agendar');
+app.use('/agendar', agendarRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
