@@ -43,8 +43,8 @@ app.use('/inicial', inicialRouter);
 const listaConsultasRouters = require('./routers/listaConsultas');
 app.use('/listaConsultas', listaConsultasRouters);
 
-const agendarRouter = require('/routers/agendar');
-app.use('/agendar', agendarRouter);
+    // const agendarRouter = require('/routers/agendar');
+    // app.use('/agendar', agendarRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
