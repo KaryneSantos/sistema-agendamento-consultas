@@ -48,7 +48,7 @@ router.post('/', (req, res) => {
         return;
     }
 
-    const sql = `INSERT INTO pacientes (cpf, nome_completo, data_nascimento, sexo, email, senha) VALUES (?, ?, ?, ?, ?, ?)`;
+    const sql = `INSERT INTO paciente (cpf, nome_completo, data_nasc, sexo, email, senha) VALUES (?, ?, ?, ?, ?, ?)`;
     connection.query(sql, [cpf, nome, data_nascimento, sexo, email, senha], (err, result) => {
         if(err) {
             console.error('ERROR ao registrar usuário: ', err);
