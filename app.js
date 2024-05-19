@@ -12,12 +12,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-// app.use(cookieParser());
-// app.use(session({
-//     secret: 'sua_chave_secreta_aqui',
-//     resave: false,
-//     saveUninitialized: false
-// }));
+app.use(cookieParser());
+app.use(session({
+    secret: 'sua_chave_secreta_aqui',
+    resave: false,
+    saveUninitialized: false
+}));
 
 const indexRouters = require('./routers/index');
 app.use('/', indexRouters);
@@ -46,6 +46,8 @@ app.use('/inicial', inicialRouter);
 const listaConsultasRouters = require('./routers/listaConsultas');
 app.use('/listaConsultas', listaConsultasRouters);
 
+const logoutRouters = require('./routers/logout');
+app.use('/logout', logoutRouters);
     // const agendarRouter = require('/routers/agendar');
     // app.use('/agendar', agendarRouter);
 
